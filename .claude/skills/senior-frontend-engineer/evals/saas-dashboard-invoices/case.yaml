@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: saas-dashboard-invoices
+expected_outcome: |
+  A single index.html containing a credible invoicing dashboard: outstanding and overdue amounts are prominent, overdue invoices are identifiable and actionable, a working 'new invoice' entry point, realistic sample data, and a layout that works at phone width without overflow.

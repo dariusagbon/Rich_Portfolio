@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: landing-page-dev-tool
+expected_outcome: |
+  A single index.html landing page that clearly explains what Tidepool does for backend engineers, puts the install command and GitHub CTA front and center, shows how it works credibly (e.g. terminal/CLI output), avoids generic AI-landing-page tropes, and is responsive.

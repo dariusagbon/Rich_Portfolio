@@ -421,8 +421,8 @@ a:hover .arrow, button:hover .arrow { width: 58px; }
 .about__left .btn { min-width: 208px; }
 
 .about__right {
-  padding-top: 52px;
-  max-width: 280px;
+  padding-top: 0;
+  max-width: 360px;
   font-size: 11.5px;
   line-height: 1.75;
 }
@@ -504,6 +504,136 @@ a:hover .arrow, button:hover .arrow { width: 58px; }
 .site-footer__links a:hover { color: var(--muted); }
 .site-footer__copy { font-size: 11px; color: var(--muted); margin: 0; }
 
+/* ---------- Core skills list ---------- */
+.skills { border-top: 1px solid #d9d1c4; }
+.skills li {
+  position: relative;
+  padding: 11px 0 11px 22px;
+  border-bottom: 1px solid #d9d1c4;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.skills li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 18px;
+  width: 9px; height: 1px;
+  background: var(--brown);
+}
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+.experience {
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: 110px clamp(16px, 8vw, 110px) 90px;
+}
+.experience > .eyebrow { text-align: center; }
+.section-title {
+  font-family: var(--f-bold);
+  font-weight: 600;
+  font-size: clamp(30px, 4.4vw, 52px);
+  line-height: 1.05;
+  text-align: center;
+  margin: 0 0 70px;
+}
+.section-title em { font-size: 1.05em; }
+
+.jobs { list-style: none; margin: 0; padding: 0; border-top: 1px solid #2a2a2a; }
+.job {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+  padding: 38px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+.job__meta { display: flex; flex-direction: column; gap: 8px; }
+.job__dates {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.1;
+}
+.job__where {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.job__role {
+  font-family: var(--f-bold);
+  font-weight: 600;
+  font-size: clamp(18px, 2vw, 22px);
+  letter-spacing: .01em;
+  margin: 0 0 16px;
+}
+.job__body ul { margin: 0; padding: 0; }
+.job__body li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #d6d1ca;
+}
+.job__body li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 11px;
+  width: 9px; height: 1px;
+  background: var(--cream);
+}
+
+/* =========================================================
+   EDUCATION
+   ========================================================= */
+.education {
+  background: var(--cream);
+  color: var(--ink);
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: 90px 24px;
+  text-align: center;
+}
+.education__degree {
+  font-family: var(--f-bold);
+  font-weight: 600;
+  font-size: clamp(26px, 4vw, 46px);
+  line-height: 1.1;
+  margin: 0 0 18px;
+}
+.education__degree em { display: block; font-size: .8em; margin-bottom: 6px; }
+.education__school {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--brown);
+  margin: 0;
+}
+
+/* ---------- Contact ---------- */
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.contact-actions .btn { text-transform: none; letter-spacing: .08em; font-size: 13px; }
+.btn--outline { background: transparent; color: var(--white); border: 1px solid #555; }
+.btn--outline:hover { border-color: var(--cream); }
+.site-footer__role {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 30px;
+}
+
 /* =========================================================
    Scroll reveal
    ========================================================= */
@@ -568,7 +698,8 @@ a:hover .arrow, button:hover .arrow { width: 58px; }
 
   .about { grid-template-columns: 1fr; gap: 10px; padding: 40px 24px 80px; }
   .about__left { padding-left: 0; }
-  .about__right { padding-top: 20px; max-width: none; font-size: 13px; }
+  .about__right { padding-top: 40px; max-width: none; }
+  .job { grid-template-columns: 1fr; gap: 14px; }
 }
 
 @media (max-width: 560px) {

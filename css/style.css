@@ -678,7 +678,7 @@ a:hover .arrow, button:hover .arrow { width: 58px; }
   .main-nav__links li:last-child { text-align: center; padding: 10px 0; }
   .main-nav__gap { display: none; }
 
-  .join-link { right: 16px; font-size: 10.5px; }
+  .join-link { top: 16px; right: 16px; font-size: 10.5px; padding: 8px 12px; background: rgba(246, 242, 234, .88); }
   .join-link .arrow { width: 28px; }
 
   .intro { grid-template-columns: 1fr; gap: 50px; padding: 0 16px 40px; }

@@ -19,7 +19,7 @@
   --page: 1180px;
   --hero-h: clamp(300px, 46vw, 560px);
   --nav-h: 86px;
-  --mark-size: clamp(64px, 12.5vw, 168px);
+  --mark-size: clamp(52px, 9.6vw, 128px);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -198,7 +198,7 @@ a:hover .arrow, button:hover .arrow { width: 58px; }
 .main-nav__links {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, auto) calc(var(--mark-size) * 3.3) repeat(3, auto);
+  grid-template-columns: repeat(3, auto) calc(var(--mark-size) * 4.7) repeat(3, auto);
   justify-content: space-between;
   align-items: center;
 }
@@ -572,6 +572,8 @@ a:hover .arrow, button:hover .arrow { width: 58px; }
 }
 
 @media (max-width: 560px) {
+  :root { --mark-size: 44px; }
+  .wordmark__line--2::after { left: 30%; right: -4%; }
   .social li:nth-child(n+4) { display: none; }
   .statement { padding-left: 16px; padding-right: 16px; }
   .arch { width: 180px; height: 230px; }

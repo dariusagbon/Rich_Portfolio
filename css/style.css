@@ -121,25 +121,6 @@ a:hover .arrow, button:hover .arrow { width: 58px; }
   object-position: center 20%;
 }
 
-.social {
-  position: absolute;
-  top: 26px; left: 18px;
-  display: flex;
-  gap: 18px;
-  z-index: 2;
-}
-.social svg {
-  width: 13px; height: 13px;
-  fill: none;
-  stroke: var(--ink);
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  transition: opacity .2s;
-}
-.social svg .fill { fill: var(--ink); stroke: none; }
-.social a:hover svg { opacity: .55; }
-
 .join-link {
   position: absolute;
   top: 26px; right: 20px;
@@ -687,7 +668,6 @@ a:hover .arrow, button:hover .arrow { width: 58px; }
   .main-nav__links li:last-child { text-align: center; padding: 10px 0; }
   .main-nav__gap { display: none; }
 
-  .social { gap: 14px; left: 16px; }
   .join-link { right: 16px; font-size: 10.5px; }
   .join-link .arrow { width: 28px; }
 
@@ -705,7 +685,6 @@ a:hover .arrow, button:hover .arrow { width: 58px; }
 @media (max-width: 560px) {
   :root { --mark-size: 44px; }
   .wordmark__line--2::after { left: 30%; right: -4%; }
-  .social li:nth-child(n+4) { display: none; }
   .statement { padding-left: 16px; padding-right: 16px; }
   .arch { width: 180px; height: 230px; }
   .arch-wrap { height: 250px; }

@@ -1,0 +1,45 @@
+@startuml Beauty Salon CRM - Use Case Diagram
+left to right direction
+skinparam usecase { BackgroundColor White
+  BorderColor #222 }
+skinparam rectangle { BackgroundColor #FBF7FA }
+
+actor "Super Admin" as SuperAdmin
+actor "Admin" as Admin
+actor "Manager" as Manager
+actor "Staff" as Staff
+
+rectangle "Beauty Salon CRM (C# / .NET)" {
+  usecase "Manage Admin Accounts" as UC1
+  usecase "Manage Subscriptions" as UC2
+  usecase "Review Sales Reports" as UC3
+  usecase "Plan Retention" as UC4
+  usecase "Data Collection" as UC5
+  usecase "Manage Staff" as UC6
+  usecase "Make Sales Report" as UC7
+  usecase "Review Feedback" as UC8
+  usecase "Manage Inquiries" as UC9
+  usecase "Entertain Customers" as UC10
+  usecase "Process Payments" as UC11
+  usecase "Generate Receipt" as UC12
+}
+
+SuperAdmin -- UC1
+SuperAdmin -- UC2
+
+Admin -- UC3
+Admin -- UC4
+Admin -- UC5
+Admin -- UC6
+
+UC6 -- Manager
+UC7 -- Manager
+UC8 -- Manager
+
+UC9 -- Staff
+UC10 -- Staff
+UC11 -- Staff
+
+UC4 ..> UC5 : <<include>>
+UC11 ..> UC12 : <<include>>
+@enduml

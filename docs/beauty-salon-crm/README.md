@@ -4,7 +4,8 @@
 
 Files in this folder:
 
-- `use-case-diagram.svg` / `use-case-diagram.png`: the diagram (vector and image versions).
+- `use-case-diagram.svg` / `use-case-diagram.png`: the diagram, stacked-box layout (vector and image versions).
+- `use-case-diagram-ellipse.svg` / `use-case-diagram-ellipse.png`: the same diagram with classic oval use cases.
 - `use-case-diagram.puml`: PlantUML source, so the diagram can be edited and regenerated.
 
 ---

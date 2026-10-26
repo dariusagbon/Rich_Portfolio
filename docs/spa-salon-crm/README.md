@@ -6,6 +6,7 @@ Files in this folder:
 
 - `use-case-diagram.svg` / `use-case-diagram.png`: the diagram, stacked-box layout (vector and image versions).
 - `Rationale_IT13_Spa_Salon_CRM.pdf` / `.docx`: the one-page rationale paper with the diagram.
+- `Spa_Salon_CRM_Use_Case.drawio`: editable draw.io version (open it at app.diagrams.net or in the draw.io desktop app).
 - `use-case-diagram.puml`: PlantUML source, so the diagram can be edited and regenerated.
 
 ---

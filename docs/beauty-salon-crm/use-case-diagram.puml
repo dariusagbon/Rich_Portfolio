@@ -16,6 +16,7 @@ rectangle "Beauty Salon CRM (C# / .NET)" {
   usecase "Plan Retention" as UC4
   usecase "Data Collection" as UC5
   usecase "Manage Staff" as UC6
+  usecase "Manage Services" as UC13
   usecase "Make Sales Report" as UC7
   usecase "Review Feedback" as UC8
   usecase "Manage Inquiries" as UC9
@@ -31,8 +32,10 @@ Admin -- UC3
 Admin -- UC4
 Admin -- UC5
 Admin -- UC6
+Admin -- UC13
 
 UC6 -- Manager
+UC13 -- Manager
 UC7 -- Manager
 UC8 -- Manager
 

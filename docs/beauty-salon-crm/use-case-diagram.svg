@@ -1,42 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1150" width="1000" height="1150" font-family="Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1230" width="1000" height="1230" font-family="Helvetica, Arial, sans-serif">
 <defs><marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,1 L10,5 L0,9 L3,5 z" fill="#222"/></marker><marker id="o" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto"><path d="M1,1 L11,6 L1,11" fill="none" stroke="#222" stroke-width="1.4"/></marker></defs>
-<rect width="1000" height="1150" fill="#fff"/>
-<rect x="395" y="50" width="260" height="1044" fill="#fff" stroke="#3b6fd8" stroke-width="3"/>
+<rect width="1000" height="1230" fill="#fff"/>
+<rect x="395" y="50" width="260" height="1126" fill="#fff" stroke="#3b6fd8" stroke-width="3"/>
 <text x="525" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#222">Beauty Salon CRM</text>
-<line x1="212" y1="628.0" x2="420" y2="546.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
-<line x1="212" y1="628.0" x2="420" y2="628.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
-<line x1="212" y1="628.0" x2="420" y2="710.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
-<g stroke="#222" stroke-width="1.8" fill="none"><circle cx="180" cy="598.0" r="17" fill="#fff"/><line x1="180" y1="615.0" x2="180" y2="663.0"/><line x1="148" y1="628.0" x2="212" y2="628.0"/><line x1="180" y1="663.0" x2="154" y2="703.0"/><line x1="180" y1="663.0" x2="206" y2="703.0"/></g><text x="180" y="726.0" text-anchor="middle" font-size="15" fill="#222">Manager</text>
-<line x1="212" y1="874.0" x2="420" y2="792.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
-<line x1="212" y1="874.0" x2="420" y2="874.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
-<line x1="212" y1="874.0" x2="420" y2="956.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
-<g stroke="#222" stroke-width="1.8" fill="none"><circle cx="180" cy="844.0" r="17" fill="#fff"/><line x1="180" y1="861.0" x2="180" y2="909.0"/><line x1="148" y1="874.0" x2="212" y2="874.0"/><line x1="180" y1="909.0" x2="154" y2="949.0"/><line x1="180" y1="909.0" x2="206" y2="949.0"/></g><text x="180" y="972.0" text-anchor="middle" font-size="15" fill="#222">Staff</text>
+<line x1="212" y1="669.0" x2="420" y2="546.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
+<line x1="212" y1="669.0" x2="420" y2="628.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
+<line x1="212" y1="669.0" x2="420" y2="710.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
+<line x1="212" y1="669.0" x2="420" y2="792.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
+<g stroke="#222" stroke-width="1.8" fill="none"><circle cx="180" cy="639.0" r="17" fill="#fff"/><line x1="180" y1="656.0" x2="180" y2="704.0"/><line x1="148" y1="669.0" x2="212" y2="669.0"/><line x1="180" y1="704.0" x2="154" y2="744.0"/><line x1="180" y1="704.0" x2="206" y2="744.0"/></g><text x="180" y="767.0" text-anchor="middle" font-size="15" fill="#222">Manager</text>
+<line x1="212" y1="956.0" x2="420" y2="874.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
+<line x1="212" y1="956.0" x2="420" y2="956.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
+<line x1="212" y1="956.0" x2="420" y2="1038.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
+<g stroke="#222" stroke-width="1.8" fill="none"><circle cx="180" cy="926.0" r="17" fill="#fff"/><line x1="180" y1="943.0" x2="180" y2="991.0"/><line x1="148" y1="956.0" x2="212" y2="956.0"/><line x1="180" y1="991.0" x2="154" y2="1031.0"/><line x1="180" y1="991.0" x2="206" y2="1031.0"/></g><text x="180" y="1054.0" text-anchor="middle" font-size="15" fill="#222">Staff</text>
 <polyline points="808,177.0 712,177.0" fill="none" stroke="#222" stroke-width="1.3"/>
 <line x1="712" y1="136.0" x2="712" y2="218.0" stroke="#222" stroke-width="1.3"/>
 <line x1="712" y1="136.0" x2="630" y2="136.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
 <line x1="712" y1="218.0" x2="630" y2="218.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
 <g stroke="#222" stroke-width="1.8" fill="none"><circle cx="840" cy="147.0" r="17" fill="#fff"/><line x1="840" y1="164.0" x2="840" y2="212.0"/><line x1="808" y1="177.0" x2="872" y2="177.0"/><line x1="840" y1="212.0" x2="814" y2="252.0"/><line x1="840" y1="212.0" x2="866" y2="252.0"/></g><text x="840" y="275.0" text-anchor="middle" font-size="15" fill="#222">Super Admin</text>
-<polyline points="808,423.0 690,423.0" fill="none" stroke="#222" stroke-width="1.3"/>
-<line x1="690" y1="300.0" x2="690" y2="546.0" stroke="#222" stroke-width="1.3"/>
+<polyline points="808,505.0 690,505.0" fill="none" stroke="#222" stroke-width="1.3"/>
+<line x1="690" y1="300.0" x2="690" y2="628.0" stroke="#222" stroke-width="1.3"/>
 <line x1="690" y1="300.0" x2="630" y2="300.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
 <line x1="690" y1="382.0" x2="630" y2="382.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
 <line x1="690" y1="464.0" x2="630" y2="464.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
 <line x1="690" y1="546.0" x2="630" y2="546.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
-<g stroke="#222" stroke-width="1.8" fill="none"><circle cx="840" cy="393.0" r="17" fill="#fff"/><line x1="840" y1="410.0" x2="840" y2="458.0"/><line x1="808" y1="423.0" x2="872" y2="423.0"/><line x1="840" y1="458.0" x2="814" y2="498.0"/><line x1="840" y1="458.0" x2="866" y2="498.0"/></g><text x="840" y="521.0" text-anchor="middle" font-size="15" fill="#222">Admin</text>
+<line x1="690" y1="628.0" x2="630" y2="628.0" stroke="#222" stroke-width="1.3" marker-end="url(#a)"/>
+<g stroke="#222" stroke-width="1.8" fill="none"><circle cx="840" cy="475.0" r="17" fill="#fff"/><line x1="840" y1="492.0" x2="840" y2="540.0"/><line x1="808" y1="505.0" x2="872" y2="505.0"/><line x1="840" y1="540.0" x2="814" y2="580.0"/><line x1="840" y1="540.0" x2="866" y2="580.0"/></g><text x="840" y="603.0" text-anchor="middle" font-size="15" fill="#222">Admin</text>
 <line x1="485.0" y1="408" x2="485.0" y2="438" stroke="#222" stroke-width="1.3" stroke-dasharray="5 4" marker-end="url(#o)"/>
 <text x="493.0" y="427" font-size="12" font-style="italic" fill="#444">«include»</text>
-<line x1="485.0" y1="982" x2="485.0" y2="1012" stroke="#222" stroke-width="1.3" stroke-dasharray="5 4" marker-end="url(#o)"/>
-<text x="493.0" y="1001" font-size="12" font-style="italic" fill="#444">«include»</text>
+<line x1="485.0" y1="1064" x2="485.0" y2="1094" stroke="#222" stroke-width="1.3" stroke-dasharray="5 4" marker-end="url(#o)"/>
+<text x="493.0" y="1083" font-size="12" font-style="italic" fill="#444">«include»</text>
 <rect x="420" y="110" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="141.0" text-anchor="middle" font-size="14.5" fill="#222">Manage Admin Accounts</text>
 <rect x="420" y="192" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="223.0" text-anchor="middle" font-size="14.5" fill="#222">Manage Subscriptions</text>
 <rect x="420" y="274" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="305.0" text-anchor="middle" font-size="14.5" fill="#222">Review Sales Reports</text>
 <rect x="420" y="356" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="387.0" text-anchor="middle" font-size="14.5" fill="#222">Plan Retention</text>
 <rect x="420" y="438" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="469.0" text-anchor="middle" font-size="14.5" fill="#222">Data Collection</text>
 <rect x="420" y="520" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="551.0" text-anchor="middle" font-size="14.5" fill="#222">Manage Staff</text>
-<rect x="420" y="602" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="633.0" text-anchor="middle" font-size="14.5" fill="#222">Make Sales Report</text>
-<rect x="420" y="684" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="715.0" text-anchor="middle" font-size="14.5" fill="#222">Review Feedback</text>
-<rect x="420" y="766" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="797.0" text-anchor="middle" font-size="14.5" fill="#222">Manage Inquiries</text>
-<rect x="420" y="848" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="879.0" text-anchor="middle" font-size="14.5" fill="#222">Entertain Customers</text>
-<rect x="420" y="930" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="961.0" text-anchor="middle" font-size="14.5" fill="#222">Process Payments</text>
-<rect x="420" y="1012" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="1043.0" text-anchor="middle" font-size="14.5" fill="#222">Generate Receipt</text>
+<rect x="420" y="602" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="633.0" text-anchor="middle" font-size="14.5" fill="#222">Manage Services</text>
+<rect x="420" y="684" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="715.0" text-anchor="middle" font-size="14.5" fill="#222">Make Sales Report</text>
+<rect x="420" y="766" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="797.0" text-anchor="middle" font-size="14.5" fill="#222">Review Feedback</text>
+<rect x="420" y="848" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="879.0" text-anchor="middle" font-size="14.5" fill="#222">Manage Inquiries</text>
+<rect x="420" y="930" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="961.0" text-anchor="middle" font-size="14.5" fill="#222">Entertain Customers</text>
+<rect x="420" y="1012" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="1043.0" text-anchor="middle" font-size="14.5" fill="#222">Process Payments</text>
+<rect x="420" y="1094" width="210" height="52" rx="10" fill="#fff" stroke="#222" stroke-width="1.4"/><text x="525.0" y="1125.0" text-anchor="middle" font-size="14.5" fill="#222">Generate Receipt</text>
 </svg>

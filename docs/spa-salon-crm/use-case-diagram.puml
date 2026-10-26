@@ -1,4 +1,4 @@
-@startuml Beauty Salon CRM - Use Case Diagram
+@startuml Spa Salon CRM - Use Case Diagram
 left to right direction
 skinparam usecase { BackgroundColor White
   BorderColor #222 }
@@ -9,7 +9,7 @@ actor "Admin" as Admin
 actor "Manager" as Manager
 actor "Staff" as Staff
 
-rectangle "Beauty Salon CRM (C# / .NET)" {
+rectangle "Spa Salon CRM (C# / .NET)" {
   usecase "Manage Admin Accounts" as UC1
   usecase "Manage Subscriptions" as UC2
   usecase "Review Sales Reports" as UC3

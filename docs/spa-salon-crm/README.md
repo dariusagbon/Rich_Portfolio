@@ -1,11 +1,11 @@
-# Beauty Salon CRM: Rationale and Use Case Diagram
+# Spa Salon CRM: Rationale and Use Case Diagram
 
-![Use case diagram of the Beauty Salon CRM](use-case-diagram.png)
+![Use case diagram of the Spa Salon CRM](use-case-diagram.png)
 
 Files in this folder:
 
 - `use-case-diagram.svg` / `use-case-diagram.png`: the diagram, stacked-box layout (vector and image versions).
-- `Rationale_IT13_Beauty_Salon_CRM.pdf` / `.docx`: the one-page rationale paper with the diagram.
+- `Rationale_IT13_Spa_Salon_CRM.pdf` / `.docx`: the one-page rationale paper with the diagram.
 - `use-case-diagram.puml`: PlantUML source, so the diagram can be edited and regenerated.
 
 ---
@@ -14,7 +14,7 @@ Files in this folder:
 
 ### 1.1 Background of the problem
 
-Many beauty salons still run day to day on paper logbooks, chat messages and spreadsheets. Appointments, customer
+Many spa salons still run day to day on paper logbooks, chat messages and spreadsheets. Appointments, customer
 inquiries, payments and staff schedules are tracked in different places, so:
 
 - customer history (services availed, preferences, visit frequency, complaints) gets lost or is hard to look up;
@@ -25,7 +25,7 @@ inquiries, payments and staff schedules are tracked in different places, so:
 
 ### 1.2 Proposed solution
 
-The **Beauty Salon CRM** is a Customer Relationship Management system built in **C# on .NET** that puts customers,
+The **Spa Salon CRM** is a Customer Relationship Management system built in **C# on .NET** that puts customers,
 staff, sales and feedback in one database. It is designed as a multi-branch / multi-tenant product: a platform owner
 (Super Admin) sells **subscriptions** to salon businesses, and each salon is run by its own Admin, Manager and Staff.
 
@@ -96,7 +96,7 @@ The actors form a hierarchy of responsibility, from the platform level down to t
 | **Plan Retention** | Identify inactive or at-risk customers and create retention actions such as loyalty points, discounts and follow-up promos. |
 | **Data Collection** | Gather and maintain customer information (profile, visit history, preferences, spending) used for analysis. |
 | **Manage Staff** | Add, edit and deactivate staff and manager accounts and set their roles. |
-| **Manage Services** | Add, edit and remove salon services (haircut, color, nails, facials, etc.), set their prices and durations, and mark them available or unavailable. |
+| **Manage Services** | Add, edit and remove salon services (massages, facials, body scrubs, nails, hair treatments, etc.), set their prices and durations, and mark them available or unavailable. |
 
 ### Manager
 

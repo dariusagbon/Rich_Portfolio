@@ -49,7 +49,7 @@ C# / .NET was chosen because:
 
 ### 1.4 Scope
 
-**In scope:** account and subscription management, staff management, service and price management, customer inquiries, customer service handling,
+**In scope:** account and subscription management, staff management, business profile, service and price management, customer inquiries, customer service handling,
 payment processing with receipts, sales reporting, feedback review, customer data collection and retention planning.
 
 **Out of scope (for this version):** payroll, inventory/supplier purchasing, and online customer self-booking. The
@@ -96,14 +96,14 @@ The actors form a hierarchy of responsibility, from the platform level down to t
 | **Plan Retention** | Identify inactive or at-risk customers and create retention actions such as loyalty points, discounts and follow-up promos. |
 | **Data Collection** | Gather and maintain customer information (profile, visit history, preferences, spending) used for analysis. |
 | **Manage Staff** | Add, edit and deactivate staff and manager accounts and set their roles. |
-| **Manage Services** | Add, edit and remove salon services (massages, facials, body scrubs, nails, hair treatments, etc.), set their prices and durations, and mark them available or unavailable. |
+| **Manage Business and Services** | Update the business profile (salon name, branches, contact details, operating hours) and add, edit and remove spa services (massages, facials, body scrubs, nails, hair treatments, etc.), set their prices and durations, and mark them available or unavailable. |
 
 ### Manager
 
 | Use case | Description |
 |---|---|
 | **Manage Staff** | Shared with Admin: maintain staff records, schedules and assignments at the branch level. |
-| **Manage Services** | Shared with Admin: update the branch's service list, prices and availability day to day. |
+| **Manage Business and Services** | Shared with Admin: keep the branch's business details, service list, prices and availability up to date. |
 | **Make Sales Report** | Compile transactions into daily, weekly or monthly sales reports and submit them for the Admin's review. |
 | **Review Feedback** | Read customer ratings and comments, flag complaints and follow up with the staff involved. |
 
@@ -121,8 +121,8 @@ The actors form a hierarchy of responsibility, from the platform level down to t
 
 - **Associations (solid lines)** link each actor to the use cases they are allowed to perform. These double as the
   role permissions to configure in ASP.NET Core Identity.
-- **Manage Staff and Manage Services are shared by Admin and Manager.** The Admin sets staff and the service
-  catalog for the whole business, while the Manager keeps them up to date at the branch. Drawing one use case with
+- **Manage Staff and Manage Business and Services are shared by Admin and Manager.** The Admin sets staff, the
+  business profile and the service catalog for the whole business, while the Manager keeps them up to date at the branch. Drawing one use case with
   two actors avoids duplicating the same function.
 - **Plan Retention «include» Data Collection.** A retention plan can't be made without customer data, so every time
   retention is planned, the collected data is pulled in. Admin can also run Data Collection on its own.

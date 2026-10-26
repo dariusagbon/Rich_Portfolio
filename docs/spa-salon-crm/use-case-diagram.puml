@@ -16,7 +16,7 @@ rectangle "Spa Salon CRM (C# / .NET)" {
   usecase "Plan Retention" as UC4
   usecase "Data Collection" as UC5
   usecase "Manage Staff" as UC6
-  usecase "Manage Services" as UC13
+  usecase "Manage Business and Services" as UC13
   usecase "Make Sales Report" as UC7
   usecase "Review Feedback" as UC8
   usecase "Manage Inquiries" as UC9

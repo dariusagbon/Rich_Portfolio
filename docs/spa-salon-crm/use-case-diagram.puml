@@ -1,48 +1,42 @@
-@startuml Spa Salon CRM - Use Case Diagram
+@startuml Massage Spa Salon CRM - Use Case Diagram
 left to right direction
-skinparam usecase { BackgroundColor White
-  BorderColor #222 }
-skinparam rectangle { BackgroundColor #FBF7FA }
-
 actor "Super Admin" as SuperAdmin
 actor "Admin" as Admin
 actor "Manager" as Manager
 actor "Staff" as Staff
 
-rectangle "Spa Salon CRM (C# / .NET)" {
-  usecase "Manage Admin Accounts" as UC1
-  usecase "Manage Subscriptions" as UC2
-  usecase "Review Sales Reports" as UC3
-  usecase "Plan Retention" as UC4
-  usecase "Data Collection" as UC5
-  usecase "Manage Staff" as UC6
-  usecase "Manage Business and Services" as UC13
-  usecase "Make Sales Report" as UC7
-  usecase "Review Feedback" as UC8
-  usecase "Manage Inquiries" as UC9
-  usecase "Entertain Customers" as UC10
-  usecase "Process Payments" as UC11
-  usecase "Generate Receipt" as UC12
+rectangle "Massage Spa Salon CRM" {
+  usecase "Manage Admin Accounts" as UC0
+  usecase "Manage Subscriptions" as UC1
+  usecase "Review Sales Reports" as UC2
+  usecase "Promotions and Retention" as UC3
+  usecase "Data Collection" as UC4
+  usecase "Manage Staff" as UC5
+  usecase "Manage Services" as UC6
+  usecase "Manage Inventory" as UC7
+  usecase "Manage Sales Report" as UC8
+  usecase "Review Feedback" as UC9
+  usecase "Manage Inquiries" as UC10
+  usecase "Manage Customers" as UC11
+  usecase "Process Payments" as UC12
+  usecase "Generate Receipt" as UC13
 }
 
+SuperAdmin -- UC0
 SuperAdmin -- UC1
-SuperAdmin -- UC2
-
+Admin -- UC2
 Admin -- UC3
 Admin -- UC4
 Admin -- UC5
 Admin -- UC6
-Admin -- UC13
-
+Admin -- UC8
+UC5 -- Manager
 UC6 -- Manager
-UC13 -- Manager
 UC7 -- Manager
 UC8 -- Manager
-
-UC9 -- Staff
+UC9 -- Manager
 UC10 -- Staff
 UC11 -- Staff
-
-UC4 ..> UC5 : <<include>>
-UC11 ..> UC12 : <<include>>
+UC12 -- Staff
+UC13 -- Staff
 @enduml

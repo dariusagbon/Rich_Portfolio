@@ -1,6 +1,6 @@
-# Spa Salon CRM: Rationale and Use Case Diagram
+# Massage Spa Salon CRM: Rationale and Use Case Diagram
 
-![Use case diagram of the Spa Salon CRM](use-case-diagram.png)
+![Use case diagram of the Massage Spa Salon CRM](use-case-diagram.png)
 
 Files in this folder:
 
@@ -15,7 +15,7 @@ Files in this folder:
 
 ### 1.1 Background of the problem
 
-Many spa salons still run day to day on paper logbooks, chat messages and spreadsheets. Appointments, customer
+Many massage spa salons still run day to day on paper logbooks, chat messages and spreadsheets. Appointments, customer
 inquiries, payments and staff schedules are tracked in different places, so:
 
 - customer history (services availed, preferences, visit frequency, complaints) gets lost or is hard to look up;
@@ -26,7 +26,7 @@ inquiries, payments and staff schedules are tracked in different places, so:
 
 ### 1.2 Proposed solution
 
-The **Spa Salon CRM** is a Customer Relationship Management system built in **C# on .NET** that puts customers,
+The **Massage Spa Salon CRM** is a Customer Relationship Management system built in **C# on .NET** that puts customers,
 staff, sales and feedback in one database. It is designed as a multi-branch / multi-tenant product: a platform owner
 (Super Admin) sells **subscriptions** to salon businesses, and each salon is run by its own Admin, Manager and Staff.
 
@@ -50,8 +50,8 @@ C# / .NET was chosen because:
 
 ### 1.4 Scope
 
-**In scope:** account and subscription management, staff management, business profile, service and price management, customer inquiries, customer service handling,
-payment processing with receipts, sales reporting, feedback review, customer data collection and retention planning.
+**In scope:** account and subscription management, staff management, service and price management, inventory management, promotions, customer inquiries, customer service handling,
+payment processing with receipts, sales reporting, feedback review, customer data collection and promotions and retention planning.
 
 **Out of scope (for this version):** payroll, inventory/supplier purchasing, and online customer self-booking. The
 customer is not a direct system user in this version: Staff record everything on the customer's behalf, which is why
@@ -93,28 +93,31 @@ The actors form a hierarchy of responsibility, from the platform level down to t
 
 | Use case | Description |
 |---|---|
-| **Review Sales Reports** | View the sales reports prepared by Managers: revenue per day/month, per service and per staff member. |
-| **Plan Retention** | Identify inactive or at-risk customers and create retention actions such as loyalty points, discounts and follow-up promos. |
+| **Review Sales Reports** | View sales figures: revenue per day/month, per service and per therapist. |
+| **Promotions and Retention** | Create promos, discounts and loyalty rewards, and identify inactive customers to win back. |
 | **Data Collection** | Gather and maintain customer information (profile, visit history, preferences, spending) used for analysis. |
 | **Manage Staff** | Add, edit and deactivate staff and manager accounts and set their roles. |
-| **Manage Business and Services** | Update the business profile (salon name, branches, contact details, operating hours) and add, edit and remove spa services (massages, facials, body scrubs, nails, hair treatments, etc.), set their prices and durations, and mark them available or unavailable. |
+| **Manage Services** | Add, edit and remove spa services (massages, facials, body scrubs, etc.), set their prices and durations, and mark them available or unavailable. |
+| **Manage Sales Report** | Shared with Manager: check, approve or correct the sales reports. |
 
 ### Manager
 
 | Use case | Description |
 |---|---|
 | **Manage Staff** | Shared with Admin: maintain staff records, schedules and assignments at the branch level. |
-| **Manage Business and Services** | Shared with Admin: keep the branch's business details, service list, prices and availability up to date. |
-| **Make Sales Report** | Compile transactions into daily, weekly or monthly sales reports and submit them for the Admin's review. |
+| **Manage Services** | Shared with Admin: keep the branch's service list, prices and availability up to date. |
+| **Manage Inventory** | Track supplies such as massage oils, lotions and towels, record stock in and out, and flag low stock. |
+| **Manage Sales Report** | Compile transactions into daily, weekly or monthly sales reports. |
 | **Review Feedback** | Read customer ratings and comments, flag complaints and follow up with the staff involved. |
 
 ### Staff
 
 | Use case | Description |
 |---|---|
-| **Manage Inquiries** | Record and answer customer questions about services, prices and availability, and log them in the customer's record. |
-| **Entertain Customers** | Register walk-in or returning customers, check their history and assign them to a service and stylist. |
+| **Manage Inquiries** | Record and answer customer questions about services, prices and availability. |
+| **Manage Customers** | Register walk-in or returning customers, update their records and assign them to a service and therapist. |
 | **Process Payments** | Compute the bill (services, discounts, loyalty points) and accept cash, card or e-wallet payment. |
+| **Generate Receipt** | Print or send the official receipt for each completed payment. |
 
 ---
 
@@ -122,15 +125,12 @@ The actors form a hierarchy of responsibility, from the platform level down to t
 
 - **Associations (solid lines)** link each actor to the use cases they are allowed to perform. These double as the
   role permissions to configure in ASP.NET Core Identity.
-- **Manage Staff and Manage Business and Services are shared by Admin and Manager.** The Admin sets staff, the
-  business profile and the service catalog for the whole business, while the Manager keeps them up to date at the branch. Drawing one use case with
+- **Manage Staff, Manage Services and Manage Sales Report are shared by Admin and Manager.** The Admin oversees
+  them for the whole business, while the Manager handles them day to day at the branch. Drawing one use case with
   two actors avoids duplicating the same function.
-- **Plan Retention «include» Data Collection.** A retention plan can't be made without customer data, so every time
-  retention is planned, the collected data is pulled in. Admin can also run Data Collection on its own.
-- **Process Payments «include» Generate Receipt.** Every completed payment always produces a receipt, so receipt
-  generation is a mandatory part of the payment flow, not an optional extension.
-- **Make Sales Report (Manager) feeds Review Sales Reports (Admin).** These are kept as separate use cases because
-  they are done by different actors with different permissions: the Manager prepares, the Admin reviews.
-- **Feedback and payment data flow upward.** What Staff record (inquiries, payments) becomes the input for the
-  Manager's reports and feedback review, which in turn feed the Admin's retention planning. Each level depends on the
-  level below it, which is why the system serves all four roles from one shared database.
+- **Manage Inventory and Review Feedback belong to the Manager only**, because they are part of running the branch
+  day to day. **Promotions and Retention and Data Collection belong to the Admin only**, because they are
+  business-level decisions.
+- **Data flows upward.** What Staff record (inquiries, customers, payments) becomes the input for the Manager's
+  reports, inventory and feedback review, which in turn feed the Admin's promotions and retention plans. Each level
+  depends on the level below it, which is why the system serves all four roles from one shared database.
